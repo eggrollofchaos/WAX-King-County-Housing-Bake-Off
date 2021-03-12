@@ -22,7 +22,7 @@ I used R-squared analysis to check that a model was successfully built, and comp
 
 To properly model with zip codes, which are a categorical feature, I created dummy variables. I further used Polynomial Regression and Recursive Feature Elimination to drop unneeded features.
 
-![correlation-matrix]('visualizations/corr_matrix.png')
+![correlation-matrix](visualizations/corr_matrix.png)
 
 ## Conclusion
 Despite the housing price data obtained, the model showed worse performance that zip code dummy variables.
