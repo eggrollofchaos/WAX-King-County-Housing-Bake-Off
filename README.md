@@ -2,14 +2,10 @@
 ## Introduction
 Students at Flatiron Data Science Intensive Bootcamp Feb 1 cohort 1 were tasked with analyzing data on housing prices in King County, performing feature engineering on the dataset provided, building models to predict housing prices, and running predictions on an unknown data set. This is their Phase 2 Project.
 
-The pandemic has deeply depressed sales due to closures and lack of buying power, but as vaccine rollout continues and the economy recovers, we will see restaurants re-opening, especially speciality cuisines and luxury dining.
-
-For my project I chose Sushi restaurants across NYC and Los Angeles.
-
 ![historic mansion](historic.jpg)
 
 ## Scikit-learn API
-To create and run the models, I used the Linear Regression toolkit and various metrics from Scikit-learn.
+This project is a chance to showcase the power of Scikit-learn. To create and run the models, I used the Linear Regression toolkit and various metrics from this library.
 
 https://scikit-learn.org/
 
