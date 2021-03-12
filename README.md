@@ -13,7 +13,7 @@ https://scikit-learn.org/
 For slicing and analyzing data, I used Pandas and Numpy. I used Matplotlib and SeaBorn for data visualization.
 I leveraged SciPy to perform statistical tests.
 
-![3d_plot](3d_plot.png)
+![3d_plot](visualizations/3d_plot.png)
 
 Through visualizations and statistical analysis I performed feature engineering to find the best set of features with which to build a house price model.
 I also gathered housing price data for King County zip codes from (https://washington.hometownlocator.com/zip-codes/countyzips,scfips,53033,c,king.cfm "WA HomeTownLocator") to assist with the modeling.
@@ -22,7 +22,7 @@ I used R-squared analysis to check that a model was successfully built, and comp
 
 To properly model with zip codes, which are a categorical feature, I created dummy variables. I further used Polynomial Regression and Recursive Feature Elimination to drop unneeded features.
 
-![correlation-matrix](corr_matrix.png)
+![correlation-matrix](visualizations/corr_matrix.png)
 
 ## Conclusion
 Despite the housing price data obtained, the model showed worse performance that zip code dummy variables.
