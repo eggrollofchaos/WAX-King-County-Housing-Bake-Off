@@ -13,7 +13,7 @@ https://scikit-learn.org/
 For slicing and analyzing data, I used Pandas and Numpy. I used Matplotlib and SeaBorn for data visualization.
 I leveraged SciPy to perform statistical tests.
 
-![3d_plot]('visualizations/3d_plot.png')
+![3d_plot](visualizations/3d_plot.png)
 
 Through visualizations and statistical analysis I performed feature engineering to find the best set of features with which to build a house price model.
 I also gathered housing price data for King County zip codes from [this file](https://washington.hometownlocator.com/zip-codes/countyzips,scfips,53033,c,king.cfm "WA HomeTownLocator") to assist with the modeling.
