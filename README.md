@@ -6,37 +6,32 @@ The pandemic has deeply depressed sales due to closures and lack of buying power
 
 For my project I chose Sushi restaurants across NYC and Los Angeles.
 
-![historic mansion](historic.jpeg)
+![historic mansion](historic.jpg)
 
 ## Scikit-learn API
-To create and run the models, I used the Linear Regression API and various metrics from Scikit-learn.
+To create and run the models, I used the Linear Regression toolkit and various metrics from Scikit-learn.
 
 https://scikit-learn.org/
 
 ## Methology
-For slicing and analyzing data, I used Pandas and Numpy. I used Matplotlib for data visualization.
+For slicing and analyzing data, I used Pandas and Numpy. I used Matplotlib and SeaBorn for data visualization.
+I leveraged SciPy to perform statistical tests.
 
-My rationale is that review count is a measure of popularity. If review count is high and rating is high, the business is likely to be successful.
+![3d_plot](3d_plot.png)
 
-I looked at overall distribution of ratings, correlations between price and rating, and correlations between price and review counts.
+Through visualizations and statistical analysis I performed feature engineering to find the best set of features with which to build a house price model.
+I also gathered housing price data for King County zip codes from (https://washington.hometownlocator.com/zip-codes/countyzips,scfips,53033,c,king.cfm "WA HomeTownLocator") to assist with the modeling.
 
-![graph](visualizations/price_rev.png)
+I used R-squared analysis to check that a model was successfully built, and compared the RMSE (root mean squared error) to determine how close of a fit the model was. I compared the model output against the original training data set; I also used train-test-split to segment the data set into random training and test subsets with which to build and run models.
+
+To properly model with zip codes, which are a categorical feature, I created dummy variables. I further used Polynomial Regression and Recursive Feature Elimination to drop unneeded features.
+
+![correlation-matrix](corr_matrix.png)
 
 ## Conclusion
-My findings indicate that businesses with two dollar signs (i.e. medium cost) receive the most reviews, and that price is not indicative of the rating.
+Despite the housing price data obtained, the model showed worse performance that zip code dummy variables.
 
-To stand the best chance of being successful, the shrewd investor should look at maximizing the traffic and popularity of the restaurant to attract interest. This means finding a location in a busy area and pricing the restaurant at a medium cost.
+From my testing, the best model fit (without overfitting) was achieved by using most of the original features as well as the engineered features.
 
-## Recommendations
-Based on my criteria, I recommend the following restaurants:
-
-### NYC:
-Izakaya MEW  |  2344 Reviews    
-Rating: 4  |  Price: $$  |  Zip Code: 10001
-
-### LA:
-Daikokuya Little Tokyo  |  8641 Reviews    
-Rating: 4  |  Price: $$  |  Zip Code: 90012
-
-### Overall:
-Daikokuya Little Tokyo
+## Predictions
+Using my final model, I predicted housing prices on the holdout dataset (kc_house_data_test_features.csv) and saved it as (housing_preds_wei_alex_xin.csv). Results of this prediction are pending.
